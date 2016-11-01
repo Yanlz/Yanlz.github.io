@@ -1,104 +1,217 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-  <meta charset="utf-8">
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>yan liang zhao</title>
+  <subtitle>程序员就是我，我就是程序员</subtitle>
+  <link href="/atom.xml" rel="self"/>
   
-  <title>Anki 记忆库之 Excel 快捷键大全 | yan liang zhao</title>
-  <meta name="author" content="Yanlz">
+  <link href="http://localhost:4000/"/>
+  <updated>2016-11-01T06:20:39.000Z</updated>
+  <id>http://localhost:4000/</id>
   
-  <meta name="description" content="颜良炤的博客|java|spring|zookeeper|soa|rpc">
+  <author>
+    <name>Yanlz</name>
+    <email>594598008@qq.com</email>
+  </author>
   
+  <generator uri="http://hexo.io/">Hexo</generator>
   
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <meta property="og:title" content="Anki 记忆库之 Excel 快捷键大全"/>
-  <meta property="og:site_name" content="yan liang zhao"/>
-
+  <entry>
+    <title>欢迎使用马克飞象</title>
+    <link href="http://localhost:4000/2016/11/01/tags/"/>
+    <id>http://localhost:4000/2016/11/01/tags/</id>
+    <published>2016-11-01T13:36:11.000Z</published>
+    <updated>2016-11-01T06:20:39.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="欢迎使用马克飞象"><a href="#欢迎使用马克飞象" class="headerlink" title="欢迎使用马克飞象"></a>欢迎使用马克飞象</h1><p>@(示例笔记本)[马克飞象|帮助|Markdown]</p>
+<p><strong>马克飞象</strong>是一款专为印象笔记（Evernote）打造的Markdown编辑器，通过精心的设计与技术实现，配合印象笔记强大的存储和同步功能，带来前所未有的书写体验。特点概述：</p>
+<ul>
+<li><strong>功能丰富</strong> ：支持高亮代码块、<em>LaTeX</em> 公式、流程图，本地图片以及附件上传，甚至截图粘贴，工作学习好帮手；</li>
+<li><strong>得心应手</strong> ：简洁高效的编辑器，提供<a href="http://maxiang.info/client_zh" target="_blank" rel="external">桌面客户端</a>以及<a href="https://chrome.google.com/webstore/detail/kidnkfckhbdkfgbicccmdggmpgogehop" target="_blank" rel="external">离线Chrome App</a>，支持移动端 Web；</li>
+<li><strong>深度整合</strong> ：支持选择<code>enter code here</code>笔记本和添加标签，支持从印象笔记跳转编辑，轻松管理。<a id="more"></a>
+</li>
+</ul>
+<hr>
+<h2 id="Markdown简介"><a href="#Markdown简介" class="headerlink" title="Markdown简介"></a>Markdown简介</h2><blockquote>
+<p>Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面。    —— <a href="https://zh.wikipedia.org/wiki/Markdown" target="_blank" rel="external">维基百科</a></p>
+</blockquote>
+<p>正如您在阅读的这份文档，它使用简单的符号标识不同的标题，将某些文字标记为<strong>粗体</strong>或者<em>斜体</em>，创建一个<a href="http://www.example.com" target="_blank" rel="external">链接</a>或一个脚注[^demo]。下面列举了几个高级功能，更多语法请按<code>Cmd + /</code>查看帮助。 </p>
+<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@requires_authorization</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">somefunc</span><span class="params">(param1=<span class="string">''</span>, param2=<span class="number">0</span>)</span>:</span></span><br><span class="line">    <span class="string">'''A docstring'''</span></span><br><span class="line">    <span class="keyword">if</span> param1 &gt; param2: <span class="comment"># interesting</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">'Greater'</span></span><br><span class="line">    <span class="keyword">return</span> (param2 - param1 + <span class="number">1</span>) <span class="keyword">or</span> <span class="keyword">None</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SomeClass</span>:</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>message = <span class="string">'''interpreter</span><br><span class="line"><span class="meta">... </span>prompt'''</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">system.out.println(<span class="string">"sdsdsds"</span>)!</span><br></pre></td></tr></table></figure>
+<h3 id="LaTeX-公式"><a href="#LaTeX-公式" class="headerlink" title="LaTeX 公式"></a>LaTeX 公式</h3><p>可以创建行内公式，例如 $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$。或者块级公式：</p>
+<p>$$    x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$</p>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><table>
+<thead>
+<tr>
+<th style="text-align:left">Item</th>
+<th style="text-align:right">Value</th>
+<th style="text-align:center">Qty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Computer</td>
+<td style="text-align:right">1600 USD</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td style="text-align:left">Phone</td>
+<td style="text-align:right">12 USD</td>
+<td style="text-align:center">12</td>
+</tr>
+<tr>
+<td style="text-align:left">Pipe</td>
+<td style="text-align:right">1 USD</td>
+<td style="text-align:center">234</td>
+</tr>
+</tbody>
+</table>
+<h3 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">st=&gt;start: Start</span><br><span class="line">e=&gt;end</span><br><span class="line">op=&gt;operation: My Operation</span><br><span class="line">cond=&gt;condition: Yes or No?</span><br><span class="line"></span><br><span class="line">st-&gt;op-&gt;cond</span><br><span class="line">cond(yes)-&gt;e</span><br><span class="line">cond(no)-&gt;op</span><br></pre></td></tr></table></figure>
+<p>以及时序图:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Alice-&gt;Bob: Hello Bob, how are you?</span><br><span class="line">Note right of Bob: Bob thinks</span><br><span class="line">Bob--&gt;Alice: I am good thanks!</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>提示：</strong>想了解更多，请查看<strong>流程图</strong><a href="http://adrai.github.io/flowchart.js/" target="_blank" rel="external">语法</a>以及<strong>时序图</strong><a href="http://bramp.github.io/js-sequence-diagrams/" target="_blank" rel="external">语法</a>。</p>
+</blockquote>
+<h3 id="复选框"><a href="#复选框" class="headerlink" title="复选框"></a>复选框</h3><p>使用 <code>- [ ]</code> 和 <code>- [x]</code> 语法可以创建复选框，实现 todo-list 等功能。例如：</p>
+<ul>
+<li>[x] 已完成事项</li>
+<li>[ ] 待办事项1</li>
+<li>[ ] 待办事项2</li>
+</ul>
+<blockquote>
+<p><strong>注意：</strong>目前支持尚不完全，在印象笔记中勾选复选框是无效、不能同步的，所以必须在<strong>马克飞象</strong>中修改 Markdown 原文才可生效。下个版本将会全面支持。</p>
+</blockquote>
+<h2 id="印象笔记相关"><a href="#印象笔记相关" class="headerlink" title="印象笔记相关"></a>印象笔记相关</h2><h3 id="笔记本和标签"><a href="#笔记本和标签" class="headerlink" title="笔记本和标签"></a>笔记本和标签</h3><p><strong>马克飞象</strong>增加了<code>@(笔记本)[标签A|标签B]</code>语法, 以选择笔记本和添加标签。 <strong>绑定账号后</strong>， 输入<code>(</code>自动会出现笔记本列表，请从中选择。</p>
+<h3 id="笔记标题"><a href="#笔记标题" class="headerlink" title="笔记标题"></a>笔记标题</h3><p><strong>马克飞象</strong>会自动使用文档内出现的第一个标题作为笔记标题。例如本文，就是第一行的 <code>欢迎使用马克飞象</code>。</p>
+<h3 id="快捷编辑"><a href="#快捷编辑" class="headerlink" title="快捷编辑"></a>快捷编辑</h3><p>保存在印象笔记中的笔记，右上角会有一个红色的编辑按钮，点击后会回到<strong>马克飞象</strong>中打开并编辑该笔记。</p>
+<blockquote>
+<p><strong>注意：</strong>目前用户在印象笔记中单方面做的任何修改，马克飞象是无法自动感知和更新的。所以请务必回到马克飞象编辑。</p>
+</blockquote>
+<h3 id="数据同步"><a href="#数据同步" class="headerlink" title="数据同步"></a>数据同步</h3><p><strong>马克飞象</strong>通过<strong>将Markdown原文以隐藏内容保存在笔记中</strong>的精妙设计，实现了对Markdown的存储和再次编辑。既解决了其他产品只是单向导出HTML的单薄，又规避了服务端存储Markdown带来的隐私安全问题。这样，服务端仅作为对印象笔记 API调用和数据转换之用。</p>
+<blockquote>
+<p><strong>隐私声明：用户所有的笔记数据，均保存在印象笔记中。马克飞象不存储用户的任何笔记数据。</strong></p>
+</blockquote>
+<h3 id="离线存储"><a href="#离线存储" class="headerlink" title="离线存储"></a>离线存储</h3><p><strong>马克飞象</strong>使用浏览器离线存储将内容实时保存在本地，不必担心网络断掉或浏览器崩溃。为了节省空间和避免冲突，已同步至印象笔记并且不再修改的笔记将删除部分本地缓存，不过依然可以随时通过<code>文档管理</code>打开。</p>
+<blockquote>
+<p><strong>注意：</strong>虽然浏览器存储大部分时候都比较可靠，但印象笔记作为专业云存储，更值得信赖。以防万一，<strong>请务必经常及时同步到印象笔记</strong>。</p>
+</blockquote>
+<h2 id="编辑器相关"><a href="#编辑器相关" class="headerlink" title="编辑器相关"></a>编辑器相关</h2><h3 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h3><p>右侧系统菜单（快捷键<code>Cmd + M</code>）的<code>设置</code>中，提供了界面字体、字号、自定义CSS、vim/emacs 键盘模式等高级选项。</p>
+<h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><p>帮助    <code>Cmd + /</code><br>同步文档    <code>Cmd + S</code><br>创建文档    <code>Cmd + Opt + N</code><br>最大化编辑器    <code>Cmd + Enter</code><br>预览文档 <code>Cmd + Opt + Enter</code><br>文档管理    <code>Cmd + O</code><br>系统菜单    <code>Cmd + M</code> </p>
+<p>加粗    <code>Cmd + B</code><br>插入图片    <code>Cmd + G</code><br>插入链接    <code>Cmd + L</code><br>提升标题    <code>Cmd + H</code></p>
+<h2 id="关于试用"><a href="#关于试用" class="headerlink" title="关于试用"></a>关于试用</h2><p><strong>马克飞象</strong>为新用户提供 10 天的试用期，试用期过后将不能同步新的笔记。之前保存过的笔记依然可以编辑。</p>
+<h2 id="反馈与建议"><a href="#反馈与建议" class="headerlink" title="反馈与建议"></a>反馈与建议</h2><ul>
+<li>微博：<a href="http://weibo.com/u/2788354117" target="_blank" rel="external">@马克飞象</a>，<a href="http://weibo.com/ggock" title="开发者个人账号" target="_blank" rel="external">@GGock</a></li>
+<li>邮箱：<a href="&#109;&#97;&#105;&#108;&#x74;&#x6f;&#x3a;&#104;&#x75;&#x73;&#x74;&#103;&#111;&#99;&#x6b;&#64;&#103;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#x6f;&#109;">&#104;&#x75;&#x73;&#x74;&#103;&#111;&#99;&#x6b;&#64;&#103;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#x6f;&#109;</a></li>
+</ul>
+<hr>
+<p>感谢阅读这份帮助文档。请点击右上角，绑定印象笔记账号，开启全新的记录与分享体验吧。</p>
+<p>[^demo]: 这是一个示例脚注。请查阅 <a href="https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide#footnotes" target="_blank" rel="external">MultiMarkdown 文档</a> 关于脚注的说明。 <strong>限制：</strong> 印象笔记的笔记内容使用 <a href="https://dev.yinxiang.com/doc/articles/enml.php" target="_blank" rel="external">ENML</a> 格式，基于 HTML，但是不支持某些标签和属性，例如id，这就导致<code>脚注</code>和<code>TOC</code>无法正常点击。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;欢迎使用马克飞象&quot;&gt;&lt;a href=&quot;#欢迎使用马克飞象&quot; class=&quot;headerlink&quot; title=&quot;欢迎使用马克飞象&quot;&gt;&lt;/a&gt;欢迎使用马克飞象&lt;/h1&gt;&lt;p&gt;@(示例笔记本)[马克飞象|帮助|Markdown]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;马克飞象&lt;/strong&gt;是一款专为印象笔记（Evernote）打造的Markdown编辑器，通过精心的设计与技术实现，配合印象笔记强大的存储和同步功能，带来前所未有的书写体验。特点概述：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;功能丰富&lt;/strong&gt; ：支持高亮代码块、&lt;em&gt;LaTeX&lt;/em&gt; 公式、流程图，本地图片以及附件上传，甚至截图粘贴，工作学习好帮手；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;得心应手&lt;/strong&gt; ：简洁高效的编辑器，提供&lt;a href=&quot;http://maxiang.info/client_zh&quot;&gt;桌面客户端&lt;/a&gt;以及&lt;a href=&quot;https://chrome.google.com/webstore/detail/kidnkfckhbdkfgbicccmdggmpgogehop&quot;&gt;离线Chrome App&lt;/a&gt;，支持移动端 Web；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;深度整合&lt;/strong&gt; ：支持选择&lt;code&gt;enter code here&lt;/code&gt;笔记本和添加标签，支持从印象笔记跳转编辑，轻松管理。
+    
+    </summary>
+    
+    
+      <category term="test" scheme="http://localhost:4000/tags/test/"/>
+    
+  </entry>
   
-    <meta property="og:image" content="undefined"/>
+  <entry>
+    <title>firstPost</title>
+    <link href="http://localhost:4000/2016/07/21/firstPost/"/>
+    <id>http://localhost:4000/2016/07/21/firstPost/</id>
+    <published>2016-07-21T06:19:28.000Z</published>
+    <updated>2016-07-21T06:19:28.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
-
-  <link rel="alternate" href="/atom.xml" title="yan liang zhao" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-
-  <!-- wumiiVerification -->
-  <meta name="wumiiVerification" content="fb50a101-84fe-4ca2-91a7-ae8cf792978b" />
-  <meta name="wumiiVerification" content="d73b5866-c390-4156-a4dd-51b526b5335e" />
-  <!-- favicon -->
-  <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico"/>
-  <!-- Font-Awesome -->
-  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
-
-</head>
-
-<body>
-  <header id="header"><div class= "header-content inner">
-	<div class = "alignleft col-one">
-		
-			<div class='avatar'>
-				<img src = "/img/default/avatar.png">
-              </div>
-		
-		<div class="header-div">
-		    <h1><a href="/">yan liang zhao</a></h1>
-		    <h2><a href="/">程序员就是我，我就是程序员</a></h2>
-		</div>
-	</div>
-	<div class = "alignright col-two">
-		
-	</div>
-	<div class="clearfix"></div>
-</div>
-
-<div class= "header-nav">
-	<div class='header-nav-content inner'>
-		<div id="main-nav" class="alignleft">
-		    		
-		    		  <a href="/"><i class="fa fa-home"></i>首页</a>
-		    		
-		    		  <a href="/archives"><i class="fa fa-archive"></i>归档</a>
-		    		
-		    		  <a href="/hexo"><i class="fa fa-book"></i>电子书</a>
-		    		
-		    		  <a href="/about"><i class="fa fa-user"></i>关于我</a>
-		    		
-		</div>
-		<div id="sub-nav" class="alignright">
-		    
-		      <a href="/atom.xml"><i class="fa fa-rss"></i>订阅</a>
-		    
-		      <a href="/customization"><i class="fa fa-question-circle"></i>留言</a>
-		    
-		</div>
-	</div>
-	<div class="clearfix"></div>
-</div>
-</header>
+  <entry>
+    <title>Hello World</title>
+    <link href="http://localhost:4000/2016/03/28/hello-World/"/>
+    <id>http://localhost:4000/2016/03/28/hello-World/</id>
+    <published>2016-03-28T03:15:38.000Z</published>
+    <updated>2016-07-26T07:23:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
+    </summary>
+    
+    
+      <category term="hello" scheme="http://localhost:4000/tags/hello/"/>
+    
+  </entry>
   
-    <div id="content" class="inner">
-      <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  <entry>
+    <title>Hello World</title>
+    <link href="http://localhost:4000/2016/03/25/Hello-World-0/"/>
+    <id>http://localhost:4000/2016/03/25/Hello-World-0/</id>
+    <published>2016-03-25T10:08:55.000Z</published>
+    <updated>2016-07-26T07:20:09.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="test" scheme="http://localhost:4000/categories/test/"/>
+    
+    
+  </entry>
   
-  <div class="post-content">
-    <header>
-        <div class="icon"></div>
-        
-        <time datetime="2015-12-22T15:15:00.000Z"><a href="/2015/12/22/text/">2015-12-22</a></time>
-        
+  <entry>
+    <title>nihao</title>
+    <link href="http://localhost:4000/2016/01/01/nihao/"/>
+    <id>http://localhost:4000/2016/01/01/nihao/</id>
+    <published>2016-01-01T14:11:24.000Z</published>
+    <updated>2016-03-26T15:02:26.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>#测试</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;#测试&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+      <category term="test" scheme="http://localhost:4000/tags/test/"/>
+    
+  </entry>
   
-    <h1 class="title">Anki 记忆库之 Excel 快捷键大全</h1>
-  
-
-    </header>
-
-    <div class="entry">
-      
-        
-    <div id="toc">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#记忆库使用"><span class="toc-text">记忆库使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#常用快捷键"><span class="toc-text">常用快捷键</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#快捷键大全"><span class="toc-text">快捷键大全</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Ctrl-组合快捷键"><span class="toc-text">Ctrl 组合快捷键</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#功能键"><span class="toc-text">功能键</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#其他实用快捷键"><span class="toc-text">其他实用快捷键</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#相关链接"><span class="toc-text">相关链接</span></a></li></ol>
-    </div>
-
-        <p>##前言<br>如果微软 Office 系列套件里只能保留一个，我会选择保留 Excel。只需要学一点基础的 Excel 知识，就能直观地感受到信息技术所带来的高效生产力。有些软件，掌握了它的快捷键，不仅能较全面地了解它的功能，也能极大地提升使用效率。Excel 就属于这类软件。</p>
+  <entry>
+    <title>Anki 记忆库之 Excel 快捷键大全</title>
+    <link href="http://localhost:4000/2015/12/22/text/"/>
+    <id>http://localhost:4000/2015/12/22/text/</id>
+    <published>2015-12-22T15:15:00.000Z</published>
+    <updated>2016-07-26T07:23:11.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>##前言<br>如果微软 Office 系列套件里只能保留一个，我会选择保留 Excel。只需要学一点基础的 Excel 知识，就能直观地感受到信息技术所带来的高效生产力。有些软件，掌握了它的快捷键，不仅能较全面地了解它的功能，也能极大地提升使用效率。Excel 就属于这类软件。</p>
 <a id="more"></a>
 <h2 id="记忆库使用"><a href="#记忆库使用" class="headerlink" title="记忆库使用"></a>记忆库使用</h2><p>所有快捷键已整理为 Anki 记忆库，下载后导入即可开始使用。</p>
 <blockquote>
@@ -804,233 +917,21 @@
 <li>微软 Office 帮助中心: <a href="https://support.office.com/zh-cn/article/Excel-%e5%bf%ab%e6%8d%b7%e9%94%ae%e5%92%8c%e5%8a%9f%e8%83%bd%e9%94%ae-1798d9d5-842a-42b8-9c99-9b7213f0040f?ui=zh-CN&amp;rs=zh-CN&amp;ad=CN" target="_blank" rel="external">Excel 快捷键和功能键</a></li>
 <li>Microsoft Office Support: <a href="https://support.office.com/en-ca/article/Excel-shortcut-and-function-keys-1798d9d5-842a-42b8-9c99-9b7213f0040f" target="_blank" rel="external">Excel shortcut and function keys</a></li>
 </ol>
-
-      
-    </div>
-    <footer>
-      
-        
-  
-  <div class="categories">
-    <a href="/categories/触类旁通/">触类旁通</a>
-  </div>
-
-        
-  <div class="tags">
-    <a href="/tags/Anki/">Anki</a>, <a href="/tags/Excel/">Excel</a>
-  </div>
-
-        <div class = "counter">
-  <span id="busuanzi_container_page_pv" style="display:none">
-      总访问&nbsp<span id="busuanzi_value_page_pv"></span>&nbsp次
-  </span>
-</div>
-        
-  <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a></div>
-  <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-  
-<section id = "relate">
-	
-                <div id="null"></div>
-	
-</section>
-
-
-  
-    <section id="comment">
-    <!--   <h1 class="title">留言</h1> -->
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;##前言&lt;br&gt;如果微软 Office 系列套件里只能保留一个，我会选择保留 Excel。只需要学一点基础的 Excel 知识，就能直观地感受到信息技术所带来的高效生产力。有些软件，掌握了它的快捷键，不仅能较全面地了解它的功能，也能极大地提升使用效率。Excel 就属于这类软件。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="触类旁通" scheme="http://localhost:4000/categories/%E8%A7%A6%E7%B1%BB%E6%97%81%E9%80%9A/"/>
     
     
-        <!-- 多说评论框 start -->
-        <div class="ds-thread" data-thread-key="2015/12/22/text/" data-title="Anki 记忆库之 Excel 快捷键大全" data-url="http://localhost:4000/2015/12/22/text/"></div>
-        <!-- 多说评论框 end -->
-        <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-        <script type="text/javascript">
-        var duoshuoQuery = {short_name:"yanlz"};
-          (function() {
-            var ds = document.createElement('script');
-            ds.type = 'text/javascript';ds.async = true;
-            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-            ds.charset = 'UTF-8';
-            (document.getElementsByTagName('head')[0] 
-             || document.getElementsByTagName('body')[0]).appendChild(ds);
-          })();
-          </script>
-        <!-- 多说公共JS代码 end -->
-
-      
-    </section>
-
-
-
-
-</div></div>
-      <aside id="sidebar" class="alignright">
-  
-<div class="widget tag">
-  <h3 class="title" id="categories">分类</h3>
-     <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/test/">test</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/触类旁通/">触类旁通</a><span class="category-list-count">1</span></li></ul> 
-</div>
- 
-
-
-  <div class="widget tag">
-  <h3 class="title">日历云</h3>
-  <div id="calendar"></div>
-</div>
-
-
-  
-<div class="widget tagcloud">
-  <h3 class="title">标签云</h3>
-  <div class="entry">
-    <a href="/tags/Anki/" style="font-size: 10px;">Anki</a> <a href="/tags/Excel/" style="font-size: 10px;">Excel</a> <a href="/tags/hello/" style="font-size: 10px;">hello</a> <a href="/tags/test/" style="font-size: 20px;">test</a>
-  </div>
-</div>
-
-
-  
-  <div class="widget tag">
-    <h3 class="title">归档</h3>
-	<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">2016年11月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">2016年07月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">2016年03月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">2016年01月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">2015年12月</a><span class="archive-list-count">1</span></li></ul>
-  </div>
-
-
-  
-<div class="widget">
-  <h3 class="title">最新评论</h3>
-  	<!-- 多说最新评论 start -->
-	<div class="ds-recent-comments ds-recent-user" data-num-items="3" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div>
-	<!-- 多说最新评论 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"yanlz"};
-		(function() {
-			var ds = document.createElement('script');
-			ds.type = 'text/javascript';ds.async = true;
-			ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-			ds.charset = 'UTF-8';
-			(document.getElementsByTagName('head')[0] 
-			 || document.getElementsByTagName('body')[0]).appendChild(ds);
-		})();
-		</script>
-	<!-- 多说公共JS代码 end -->
-</div>
-
-
-
-  
-  <div class="widget tag">
-    <h3 class="title">友情链接</h3>
-      <ul class="entry">
-        
-          <li class='link'><a href='http://pengloo53.farbox.com'>LP&#39;s Blog</a></li>
-        
-          <li class='link'><a href='http://xiaoyun.farbox.com'>xiaoxiao&#39;s Blog</a></li>
-        
-          <li class='link'><a href='http://www.saysays.com'>说说事</a></li>
-        
-      </ul>
-  </div>
-
-
-
-  <div class="widget">
-  <h3 class="title">我的微博</h3>
-    <ul class="weibo">
-	<iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=1952137120&verifier=c8a189d1&dpc=1"></iframe>
-    </ul>
-</div>
-</aside>
-      <div class="clearfix"></div>
-    </div>
-  
-  <footer id="footer"><div class="footer-content inner">
-  <div class="alignleft">
-  
-    &copy; 2015-2016 Yanlz
+      <category term="Anki" scheme="http://localhost:4000/tags/Anki/"/>
     
-  </div>
-  <div class="alignright">
-    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, Theme
-    <a href="https://github.com/pengloo53/Hexo-theme-light_cn">light_cn</a>
-  </div>
-  
-  <div class="visit">
-    本站总访问量<span id="busuanzi_value_site_pv"></span>次
-  </div>
-  
-  <div class="clearfix"></div>
-</div></footer>
-  <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
-
-<!-- calendar widget -->
-
-  <script src="/js/calendar.js"></script>
-  <script src="/js/languages.js"></script>
-  <script type="text/javascript">
-    $(function() {
+      <category term="Excel" scheme="http://localhost:4000/tags/Excel/"/>
     
-      $('#calendar').aCalendar('zh-CN',{single:undefined, root:'calendar'});
-    
-    });
-  </script>
-
-
-<!-- 『不蒜子』计数服务 -->
-<script async src="http://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-<!-- wumii关联推荐 -->
-<script type="text/javascript" src="http://widget.wumii.cn/ext/relatedItemsWidget"></script>
-
-<!-- 百度推荐 -->
-
-	<script>
-	var _hmt = _hmt || [];
-	(function() {
-	  var hm = document.createElement("script");
-	  hm.src = "//hm.baidu.com/hm.js?9acf0cedd48dc53be256ede5a98c2aaa";
-	  var s = document.getElementsByTagName("script")[0]; 
-	  s.parentNode.insertBefore(hm, s);
-	})();
-	</script>
-
-
-<!-- 返回顶部 -->
-<div id="toTop">
-	<a href="#">▲</a>
-	<a href="#footer">▼</a>
-</div>
-
-<!-- 站内搜索-Swiftype -->
-<script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+  </entry>
   
-  _st('install','sC-iNFrvTTNtiXEVNwo1','2.0.0');
-</script>
-
-<!-- fancybox -->
-
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
-</script>
-
-
-</body>
-</html>
+</feed>
